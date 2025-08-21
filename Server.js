@@ -23,7 +23,7 @@ io.on('connection', (socket) => {
             console.log('postId',postId)
             console.log('userId',userId)
             // Call Next.js API
-            const response = await axios.put("https://skillsync-ebon.vercel.app/api/post/addlikeanddislike", {
+            const response = await axios.put("http://localhost:3000/api/post/addlikeanddislike", {
                 userId: userId,
                 postId: postId
             });
